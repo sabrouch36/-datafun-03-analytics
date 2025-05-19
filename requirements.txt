@@ -1,3 +1,7 @@
-pandas
-openpyxl
-numpy
+#pandas
+#openpyxl
+#numpy
+# ======================================================
+# NETWORKING / HTTP
+# ======================================================
+requests
