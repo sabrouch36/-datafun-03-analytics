@@ -1,4 +1,4 @@
-# -datafun-03-analytics
+# datafun-03-analytics
 # DataFun-03-Analytics
 
 This project is part of the Data Fundamentals course at Northwest Missouri State University.
