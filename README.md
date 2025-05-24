@@ -63,24 +63,36 @@ logs/project_log.log
 ##  Project Structure
 
 ```
-datafun-03-analytics/
-├── .venv/
-├── data/
-│   └── example_data/
-│       ├── 2020_happiness.csv
-│       ├── Feedback.xlsx
-│       ├── astros.json
-│       └── romeo.txt
+```
+├── example_data/
+│ ├── 2020_happiness.csv
+│ ├── astros.json
+│ ├── Feedback.xlsx
+│ └── romeo.txt
+│
 ├── logs/
-│   └── project_log.log
+│ └── project_log.log
+│
 ├── example_get_csv.py
 ├── example_get_excel.py
 ├── example_get_json.py
 ├── example_get_text.py
-├── utils_logger.py
+│
+├── example_process_csv.py
+├── example_process_excel.py
+├── example_process_json.py
+├── example_process_text.py
+│
+├── happiness_ladder_score_stats.txt
+├── json_astronauts_by_craft.txt
+├── text_romeo_word_count.txt
+│
+├── main.py
 ├── requirements.txt
-└── README.md
-```
+├── README.md
+└── utils_logger.py
+
+
 
 ---
 
