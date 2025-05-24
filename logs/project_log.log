@@ -166,3 +166,15 @@
 2025-05-23 20:51:09.729 | INFO     | __main__:write_txt_file:80 - Writing data to example_data\romeo.txt...
 2025-05-23 20:51:09.731 | INFO     | __main__:write_txt_file:84 - SUCCESS: Data written to example_data\romeo.txt
 2025-05-23 20:51:09.731 | INFO     | __main__:fetch_txt_file:60 - SUCCESS: Text file fetched and saved as romeo.txt
+2025-05-23 20:59:12.278 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-05-23 20:59:12.278 | INFO     | __main__:<module>:97 - Starting CSV processing...
+2025-05-23 20:59:12.288 | INFO     | __main__:process_csv_file:90 - Processed CSV file: example_data\2020_happiness.csv, Statistics saved to: example_processed\happiness_ladder_score_stats.txt
+2025-05-23 20:59:12.289 | INFO     | __main__:<module>:99 - CSV processing complete.
+2025-05-23 21:00:34.735 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-05-23 21:00:34.735 | INFO     | __main__:<module>:118 - Starting JSON processing...
+2025-05-23 21:00:34.742 | INFO     | __main__:process_json_file:111 - Processed JSON file: example_data\astros.json, Results saved to: example_processed\json_astronauts_by_craft.txt
+2025-05-23 21:00:34.743 | INFO     | __main__:<module>:120 - JSON processing complete.
+2025-05-23 21:01:09.058 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-05-23 21:01:09.058 | INFO     | __main__:<module>:72 - Starting text processing...
+2025-05-23 21:01:09.075 | INFO     | __main__:process_text_file:65 - Processed text file: example_data\romeo.txt, Word count saved to: example_processed\text_romeo_word_count.txt
+2025-05-23 21:01:09.076 | INFO     | __main__:<module>:74 - Text processing complete.
