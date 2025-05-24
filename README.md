@@ -1,8 +1,7 @@
- HEAD
-# datafun-03-analytics
-# DataFun-03-Analytics
-=======
-#  DataFun-03-Analytics
+
+
+
+#  DataFun-03-Analytic
   (Finalize DataFun-03 project: fetch, process, and log all data types)
 
 A Python project to fetch, analyze, and log data from multiple formats:
