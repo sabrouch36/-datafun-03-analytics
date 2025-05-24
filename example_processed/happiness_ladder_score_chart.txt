@@ -1,0 +1,12 @@
+Top Happiness Scores (Text-based Bar Chart)
+
+Western Europe  | *********************** (7.81)
+Western Europe  | ********************** (7.65)
+Western Europe  | ********************** (7.56)
+Western Europe  | ********************** (7.50)
+Western Europe  | ********************** (7.49)
+Western Europe  | ********************** (7.45)
+Western Europe  | ********************** (7.35)
+North America and ANZ | ********************* (7.30)
+Western Europe  | ********************* (7.29)
+Western Europe  | ********************* (7.24)

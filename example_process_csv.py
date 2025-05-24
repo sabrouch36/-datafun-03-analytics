@@ -88,6 +88,26 @@ def process_csv_file():
     
     # Log the processing of the CSV file
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
+def write_top_scores_chart(stats: list, output_path: pathlib.Path) -> None:
+    """
+    Create a simple text-based bar chart of top happiness scores.
+
+    Args:
+        stats (list): A list of tuples [(country, score), ...]
+        output_path (Path): Path to save the text chart
+
+    Returns:
+        None
+    """
+    try:
+        with output_path.open('w') as file:
+            file.write("Top Happiness Scores (Text-based Bar Chart)\n\n")
+            for country, score in stats:
+                bar = '*' * int(score * 3)  # scale stars
+                file.write(f"{country:<15} | {bar} ({score:.2f})\n")
+        logger.info(f"SUCCESS: Bar chart written to {output_path}")
+    except Exception as e:
+        logger.error(f"Error writing bar chart: {e}")
 
 #####################################
 # Main Execution
@@ -97,4 +117,31 @@ if __name__ == "__main__":
     logger.info("Starting CSV processing...")
     process_csv_file()
     logger.info("CSV processing complete.")
+        # Fetch the CSV
+    csv_path = pathlib.Path(FETCHED_DATA_DIR) / "2020_happiness.csv"
     
+    # Analyze data
+    country_scores = []
+
+    try:
+        with csv_path.open('r', encoding='utf-8') as file:
+            next(file)  # skip header
+            for line in file:
+                parts = line.strip().split(',')
+                if len(parts) >= 3:
+                    country = parts[1].strip('"')
+                    try:
+                        score = float(parts[2])
+                        country_scores.append((country, score))
+                    except ValueError:
+                        continue
+
+        # Sort and get top 10
+        top_countries = sorted(country_scores, key=lambda x: x[1], reverse=True)[:10]
+        
+        # Output chart
+        chart_path = pathlib.Path(PROCESSED_DIR) / "happiness_ladder_score_chart.txt"
+        write_top_scores_chart(top_countries, chart_path)
+
+    except Exception as e:
+        logger.error(f"Error reading CSV for chart: {e}")
